@@ -42,3 +42,11 @@ end
     thumb_image: "https://exueka.dm2301.livefilestore.com/y4mnHUTshQD-Vc8O8zUpege9gsrU7PAKzmgn5f-fQvCZ2qfvn0FkCO9BvXVVPUDYVpjclNu5xEusAXxm2Map0_MtPTWsBjF4JcryAxE6ZXvGd82WDGrCDLQrkn0H2fEPAkXThtPiDlm5JLiyd-RaYSEoZl0ujIWh74NKQDWtATsU1bdxnPEJt5MhG_j0aRcBWb-p-6o4pkHXoiyfXh9nHVBDw?width=256&height=192&cropmode=none",
   )
 end
+
+3.times do |technology|
+  Portfolio.last.technologies.create!(
+    name: "Technology #{technology}"
+    )
+end
+
+puts "3 Technologies created"
