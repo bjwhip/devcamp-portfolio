@@ -4,16 +4,14 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-
-  #CHANGE email TO name NAME>>>>>>>>>><<<<<<<<<-----------------
-  validates_presence_of :email
+  validates_presence_of :name
 
   def first_name
-    self.email.split("@").first
+    self.name.split.first
   end
 
   def last_name
-    self.email.split("@").last
+    self.name.split.last
   end
 
 end
