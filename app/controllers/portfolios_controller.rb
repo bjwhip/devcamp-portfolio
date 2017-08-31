@@ -1,6 +1,7 @@
 class PortfoliosController < ApplicationController
   def index
     @portfolio_items = Portfolio.all
+    @page_title = "Amazing Portfolios"
   end
 
   def angular
@@ -15,6 +16,7 @@ class PortfoliosController < ApplicationController
 
   def new
     @portfolio_item = Portfolio.new
+    @page_title = "New Portfolio"
     3.times { @portfolio_item.technologies.build }
   end
 
@@ -32,6 +34,7 @@ class PortfoliosController < ApplicationController
 
   def edit
     @portfolio_item = Portfolio.find(params[:id])
+    @page_title = "Edit Portfolio"
   end
 
   def update
@@ -49,6 +52,7 @@ class PortfoliosController < ApplicationController
 
   def show
     @portfolio_item = Portfolio.find(params[:id])
+    @page_title = @portfolio_item.title
   end
 
   def destroy
