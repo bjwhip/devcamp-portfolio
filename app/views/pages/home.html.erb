@@ -1,4 +1,4 @@
-<h1>HELLO <%= current_user.first_name if current_user %>!</h1>
+<h1>Hello <%= current_user.first_name %></h1>
 
 <!-- DELETE THIS LINK -->
 <h2><%= link_to "Portfolios", portfolios_path %></h2>
@@ -12,3 +12,5 @@
 
 <h2> Skills </h2>
 <%= @skills.inspect %>
+
+<%= current_user.class %>
