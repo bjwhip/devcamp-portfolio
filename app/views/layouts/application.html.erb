@@ -19,6 +19,10 @@
       <%= link_to "Login", new_user_session_path %>
     <% end %>
 
+    <%= link_to "Home", root_path %>
+    <%= link_to "Portfolios", portfolios_path %>
+    <%= link_to "Blogs", blogs_path %>
+
     <%= yield %>
 
     <% if session[:source] %>
