@@ -22,7 +22,7 @@
     <%= yield %>
 
     <% if session[:source] %>
-    <p> I like your photos on <%= session[:source] %> <%= current_user.first_name if current_user %> </p>
+    <p> I like your photos from <%= session[:source] %> <%= current_user.first_name if current_user %> </p>
     <% end %>
   </body>
 </html>
