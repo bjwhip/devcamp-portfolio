@@ -8,4 +8,19 @@ module ApplicationHelper
       (link_to "Login", new_user_session_path)
     end
   end
+
+  # def source_helper
+  #   if session[:source]
+  #     greeting = "I like your photos from #{session[:source] current_user.first_name if current_user}"
+  #     content_tag(:p, greeting, class= "source-greeting")
+  #   end
+  # end
+
+  def source_helper
+    if session[:source]
+      greeting = "I like your photos from #{session[:source]}"
+      content_tag(:p, greeting, class: "source-greeting")
+    end
+  end
+
 end
