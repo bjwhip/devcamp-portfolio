@@ -23,4 +23,7 @@ module ApplicationHelper
     end
   end
 
+  def copyright_generator
+    SockViewTool::Renderer.copyright 'Ben Whipple', 'All rights reserved'
+  end
 end

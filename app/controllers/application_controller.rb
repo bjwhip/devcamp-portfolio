@@ -4,10 +4,4 @@ class ApplicationController < ActionController::Base
   include SetSource
   include CurrentUserConcern
   include DefaultPageContent
-
-  before_action :set_copyright
-
-  def set_copyright
-    @copyright = SockViewTool::Renderer.copyright 'Ben Whipple', 'All rights reserved'
-  end
 end
