@@ -3,6 +3,6 @@
 <h2><%= link_to "Ruby on Rails Portfolios", portfolio_ruby_on_rails_path%></h2>
 <h2><%= link_to "Angular Portfolios", portfolio_angular_path%></h2>
 
-<b><%= link_to "Create New Item", new_portfolio_path%></b>
+<b><%= link_to "Create New Item", new_portfolio_path if logged_in?(:site_admin) %></b>
 
 <%= render partial: 'portfolio_item', collection: @portfolio_items %>
