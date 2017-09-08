@@ -7,6 +7,13 @@ access all: [:show, :index, :angular, :ruby_on_rails], user: {except: [:destroy,
     @portfolio_items = Portfolio.order("position ASC")
   end
 
+  def sort
+    params[:order].each do |key, value|
+      Portfolio.find(value[:id]).update(position: value[:position])
+    end
+    render nothing: true
+  end
+
   def angular
     @angular_portfolio_items = Portfolio.angular
   end
