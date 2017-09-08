@@ -2,6 +2,6 @@ module Placeholder
   extend ActiveSupport::Concern
 
   def self.image_generator(height:, width:)
-    "https://hzboyw.dm2301.livefilestore.com/y4mC9zX_IYHebgupreRjPN-YKwPg9b39g_6gAmC3VG4rNHfQb7Llf9rLInRJMTtXGEcVsH83pMDL34o-y05eTa5sW9st6typHNJ4nTky1MU8F28gxLfcbafPPDnn3gSeV2mO-U3Me0vP0tzDrP8w7665huxBtu78iO9eEcAVbY7SmS9mK5KVXgUlAwhBH6TC51_MXIdxGKbW-Sz11Po5iUJaA?width=#{width}&height=#{height}&cropmode=none"
+    "https://fuls2a.dm2301.livefilestore.com/y4mDrI74nyCQk-j7DoNlKwT7_6eNMo7kFwboHTfchZtgSn1N5UtbpmEasoL-15c9X0vNoDBM0i8RbNqvXNdjVprwOcasrS7jzoLfweZb_aFyV9WNnx4M4G5wHujEpyQe97u9NJWX_W0xGqcTzPWDoJHuV5qmSCbD6X1_WLNI9caUNqhwmpAAG-0_prcGe0WV4vymg7D2_FeG5fJLCRg9KT9EQ?width=660&height=371&cropmode=none"
   end
 end
