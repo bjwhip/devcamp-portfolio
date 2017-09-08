@@ -1,25 +1,3 @@
-<!-- <div class="navbar navbar-light bg-primary" id="navbarHeader">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8 py-4">
-        <h4 class="awesome_colors">About</h4>
-        <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-      </div>
-      <div class="col-sm-4 py-4">
-        <h4 class="awesome_colors">Explore</h4>
-        <ul class="list-unstyled">
-          <li><%= link_to "Home", root_path, class: 'awesome_colors' %></li>
-          <li><%= link_to "About Me", about_me_path, class: 'awesome_colors' %></li>
-          <li><%= link_to "Contact", contact_path, class: 'awesome_colors' %></li>
-          <li><%= link_to "Blog", blogs_path, class: 'awesome_colors' %></li>
-          <li><%= link_to "Portfolio", portfolios_path, class: 'awesome_colors' %></li>
-          <li><%= login_helper 'awesome_colors' %></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div> -->
-
 <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -29,12 +7,8 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-md-0">
       <li class="nav-item">
-        <li><%= link_to "Home", root_path, class: 'awesome_colors' %></li>
-        <li><%= link_to "About Me", about_me_path, class: 'awesome_colors' %></li>
-        <li><%= link_to "Contact", contact_path, class: 'awesome_colors' %></li>
-        <li><%= link_to "Blog", blogs_path, class: 'awesome_colors' %></li>
-        <li><%= link_to "Portfolio", portfolios_path, class: 'awesome_colors' %></li>
-        <li><%= login_helper 'awesome_colors' %></li>
+        <%= nav_helper 'black-text', 'li' %>
+        <li><%= login_helper 'black-text' %></li>
       </li>
     </ul>
   </div>
