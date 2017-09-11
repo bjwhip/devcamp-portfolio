@@ -35,7 +35,7 @@ access all: [:show, :index, :angular, :ruby_on_rails], user: {except: [:destroy,
 
     respond_to do |format|
       if @portfolio_item.save
-        format.html { redirect_to portfolios_path, notice: 'Your Portfolio Item is Live' }
+        format.html { redirect_to portfolios_path, notice: 'Your portfolio item is now live.' }
       else
         format.html { render :new }
       end
@@ -73,7 +73,7 @@ access all: [:show, :index, :angular, :ruby_on_rails], user: {except: [:destroy,
   private
 
   def portfolio_params
-    params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name])
+    params.require(:portfolio).permit(:title, :subtitle, :body, :thumb_image, :main_image, technologies_attributes: [:name])
   end
 
   def set_portfolio_item
