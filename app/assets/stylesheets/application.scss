@@ -208,3 +208,16 @@ body {
 .transparent {
   opacity: .7;
 }
+
+.tech-news {
+  color: black;
+  margin: 20px;
+}
+
+.tech-news > .card {
+  padding: 30px;
+}
+
+.tech-news a {
+  color: blue;
+}

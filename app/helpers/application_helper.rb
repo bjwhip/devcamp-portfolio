@@ -42,6 +42,10 @@ module ApplicationHelper
         url: blogs_path,
         title: 'Blog'
       },
+      {
+        url: slcc_news_path,
+        title: 'SLCC News'
+      },
     ]
   end
 
