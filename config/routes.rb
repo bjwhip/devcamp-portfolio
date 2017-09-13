@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'portfolio/ruby', to: 'portfolios#ruby_on_rails', as: 'portfolio_ruby_on_rails'
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
 
+  get 'slcc-news', to: 'pages#slcc_news'
   get 'about-me', to: 'pages#about'
   get 'contact', to: 'pages#contact'
 
