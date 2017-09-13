@@ -27,7 +27,7 @@ access all: [:show, :index, :angular, :ruby_on_rails], user: {except: [:destroy,
   def new
     @portfolio_item = Portfolio.new
     @page_title = "New Portfolio"
-    3.times { @portfolio_item.technologies.build }
+    @portfolio_item.technologies.build
   end
 
   def create
@@ -73,7 +73,7 @@ access all: [:show, :index, :angular, :ruby_on_rails], user: {except: [:destroy,
   private
 
   def portfolio_params
-    params.require(:portfolio).permit(:title, :subtitle, :body, :thumb_image, :main_image, technologies_attributes: [:name])
+    params.require(:portfolio).permit(:title, :subtitle, :body, :thumb_image, :main_image, technologies_attributes: [:id, :name, :_destroy])
   end
 
   def set_portfolio_item
