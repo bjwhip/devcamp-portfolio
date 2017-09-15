@@ -1,10 +1,28 @@
 <div class="col-sm-8 blog-main">
 
     <h2><%= @blog.title %></h2>
-    <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %> |
+    <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
     <%= link_to 'Back', blogs_path %>
 
   <p>
     <%= @blog.body %>
   </p>
+
+  <!-- Start of Comment form -->
+  <% unless current_user.is_a? GuestUser %>
+    <%= form_with(model: @comment, url: '#', local: true) do |f| %>
+      <div class="form-group">
+        <%= f.label :content %>
+        <%= f.text_area :content, class: 'form-control' %>
+      </div>
+
+      <%= f.submit 'Post Comment', class: 'btn btn-primary' %>
+    <% end %>
+  <% end %>
+  <!-- End of Comment form -->
+
+  <!-- Start of Comments -->
+  <%= render @blog.comments %>
+  <!-- End of Comments -->
+
 </div>
