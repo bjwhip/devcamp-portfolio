@@ -9,10 +9,10 @@ module ApplicationHelper
     end
   end
 
-  def source_helper
+  def source_helper(styles)
     if session[:source]
-      greeting = "I like your photos from #{session[:source]}"
-      content_tag(:p, greeting, class: "source-greeting")
+      greeting = "I like your photos from #{session[:source]}, feel free to #{ link_to 'contact me', contact_path } if you'd like to look together"
+      content_tag(:div, greeting.html_safe, class: styles)
     end
   end
 

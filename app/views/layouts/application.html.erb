@@ -9,6 +9,8 @@
 
     <meta name="keywords" content="<%= @seo_keywords %>">
 
+    <%= favicon_link_tag 'favicons/favicons.ico/favicon.ico' %>
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -39,8 +41,6 @@
           <%= alert %>
 
           <%= render "shared/application_footer" %>
-
-          <%= source_helper %>
 
         </div>
       </div>
