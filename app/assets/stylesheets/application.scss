@@ -30,6 +30,7 @@ a:hover {
 html,
 body {
   height: 100%;
+  font-family: 'Raleway', sans-serif;
 }
 body {
   color: #fff;
@@ -207,4 +208,38 @@ body {
 
 .transparent {
   opacity: .7;
+}
+
+.tech-news {
+  color: black;
+  margin: 20px;
+}
+
+.tech-news > .card {
+  padding: 30px;
+}
+
+.tech-news a {
+  color: blue;
+}
+.app-card-container {
+  color: black;
+
+}
+
+.app-card-container >.card {
+  padding: 40px;
+  opacity: .95;
+}
+.app-card-container a {
+  color: blue;
+
+}
+
+.card-block {
+  margin-top: 5px;
+}
+
+.skill{
+  margin-top: 10px;
 }
