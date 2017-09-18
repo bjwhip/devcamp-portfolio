@@ -1,3 +1,22 @@
+User.create!(
+  email: "warlock@traveler.org",
+  password: "ghosts",
+  password_confirmation: "ghosts",
+  name: "Warlock Guardian",
+  roles: "site_admin"
+  )
+
+puts "1 Admin user created"
+
+User.create!(
+  email: "civy@traveler.org",
+  password: "ghosts",
+  password_confirmation: "ghosts",
+  name: "Scared Citizen",
+  )
+
+  puts "1 regular user created"
+
 3.times do |topic|
   Topic.create!(
     title: "Topic #{topic}"
