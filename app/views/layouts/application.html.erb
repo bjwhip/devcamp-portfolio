@@ -19,31 +19,29 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-    <div class="site-wrapper">
+    <div class="">
 
-      <div class="site-wrapper-inner">
-        <div class="cover-container">
+      <%= render "shared/application_nav" %>
 
-          <%= video_tag(
-              'dj.mp4',
-              id: 'background',
-              autoplay: true,
-              loop: true,
-              muted: true,
-              poster: 'home.jpg'
-            )
-          %>
+      <%= video_tag(
+          'dj.mp4',
+          width: '100%',
+          autoplay: true,
+          loop: true,
+          muted: true,
+          poster: 'home.jpg'
 
-          <%= render "shared/application_nav" %>
+        )
+      %>
 
-          <%= yield %>
 
-          <%= alert %>
 
-          <%= render "shared/application_footer" %>
+      <%= yield %>
 
-        </div>
-      </div>
+      <%= alert %>
+
+      <%= render "shared/application_footer" %>
+
     </div>
   </body>
 </html>

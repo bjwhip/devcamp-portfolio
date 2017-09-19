@@ -1,9 +1,27 @@
-<div class="masthead clearfix">
-  <div class="inner">
-    <h3 class="masthead-brand">Ben Whipple</h3>
-    <nav class="nav nav-masthead app-nav">
-      <%= nav_helper 'nav-link', 'span' %>
-      <%= login_helper 'nav-link' %>
-    </nav>
-  </div>
+<div class="container pt-4">
+  <nav class="navbar navbar-light navbar-toggleable-sm navbar-static-top text-uppercase app-navbar mb-5">
+    <button
+      class="navbar-toggler navbar-toggler-right hidden-md-up"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand mr-auto" href="../">
+      <span>Mochi</span>
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item ">
+          <%= nav_helper 'nav-link', 'li' %>
+          <%= login_helper 'nav-link' %>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </nav>
 </div>
