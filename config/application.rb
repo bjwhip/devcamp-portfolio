@@ -21,6 +21,7 @@ module DevcampPortfolio
     config.load_defaults 5.1
     config.generators.system_tests = nil
     config.action_controller.permit_all_parameters = true
+    config.secret_key_base = ENV["SECRET_KEY_BASE"]
 
     config.eager_load_paths << "#{Rails.root}/lib"
   end

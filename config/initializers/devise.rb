@@ -8,14 +8,12 @@ Devise.setup do |config|
   # by default. You can change it below and use your own secret key.
   # config.secret_key = 'f8e79840af4ca938c53ed4169d9475df48b6db4e565dcda56fc6ede8a5b4f8f88239f3eed6d33e49f2db968fa0d7217a13f9b51bbbf52ad5b640315c559290f0'
 
-  config.secret_key = 'a94fb382c4bcd3f8bed974c10e2cfe94a3086e7af18aaceadd62c3958be3dd123de08a7a2dc4d3b8f691d1e0855551c82290d2a54e8a711fd5b921f95cf42442'
-
-
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
   config.mailer_sender = 'support@devcamp.com'
+
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
