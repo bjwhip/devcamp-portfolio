@@ -16,7 +16,23 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <section>
+    <%= video_tag(
+      'dj.mp4',
+      class: "vid-bg",
+      width: '100%',
+      autoplay: true,
+      loop: true,
+      muted: true,
+      poster: 'test-portfolio.png',
+      )
+      %>
+
+    <%= image_tag("test-portfolio.png", class: "photo-bg") %>
+  </section>
+
   <%= render "shared/application_nav" %>
+
 
   <body>
   <p class="notice"><%= notice %></p>
@@ -28,7 +44,7 @@
       <div class="container text-xs-center">
         <h1 class="block-title mb-0 text-uppercase app-myphone-brand">Mochi</h1>
         <p class="lead mb-5 pb-5">Task management and a calendar for all</p>
-        <%= image_tag("test-portfolio.png", class: "head-photo") %>
+
       </div>
     </section>
 
@@ -44,7 +60,7 @@
       </div>
     </section>
 
-    <section class="block block-bordered-lg pb-0 app-block-stats">
+    <section class="block block-bordered-lg pb-0 app-block-stats ghost">
       <div class="container">
         <div class="row">
           <div class="col-lg-7 col-md-6">
@@ -266,16 +282,6 @@
       </div>
     </section>
 
-    <%= video_tag(
-      'dj.mp4',
-      width: '100%',
-      autoplay: true,
-      loop: true,
-      muted: true,
-      poster: 'home.jpg'
-
-      )
-      %>
 
 
 

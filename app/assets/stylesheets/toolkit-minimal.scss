@@ -38,7 +38,7 @@ $input-height-base: 39px;
 
 @import "./components.scss";
 
-.head-photo {
+.photo-bg {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -51,6 +51,22 @@ $input-height-base: 39px;
   background-size: cover;
 }
 
+.vid-bg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
 .center {
   size: cover;
+}
+
+.ghost {
+  opacity: 0;
 }
