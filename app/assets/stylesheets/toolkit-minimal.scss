@@ -70,3 +70,39 @@ $input-height-base: 39px;
 .ghost {
   opacity: 0;
 }
+
+.full-image {
+  width: 100%;
+  display: inline-block;
+}
+
+.overlay-selector {
+
+}
+
+.overlay {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.overlay-selector:hover .overlay {
+  opacity: 0.5;
+}
+
+.overlay-item {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.overlay-selector:hover .overlay-item {
+  opacity: 1;
+}
