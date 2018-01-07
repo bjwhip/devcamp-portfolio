@@ -106,3 +106,15 @@ $input-height-base: 39px;
 .overlay-selector:hover .overlay-item {
   opacity: 1;
 }
+
+.padded {
+  padding: 100px;
+}
+.vid-block {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
